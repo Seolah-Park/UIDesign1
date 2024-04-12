@@ -1,0 +1,59 @@
+body {
+    background-color: #424EFF;
+    color: #F1F4FF;
+    font-family: 'Silkscreen', sans-serif; /* Silkscreen 폰트와 기본 sans-serif를 함께 지정 */
+}
+
+pre {
+    text-align: center; /* 가로로 가운데 정렬 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    display: block; /* 블록 요소로 변경하여 가로로만 중앙 정렬되도록 함 */
+    max-width: 100%; /* 최대 너비 설정 */
+}
+
+.pre-container {
+    line-height: 1.5; /* 원하는 행간 값으로 설정 */
+    text-align: center; /* 가로로 가운데 정렬 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+}
+
+#grid {
+    text-align: center; /* 텍스트를 가로로 중앙 정렬 */
+    height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
+}
+
+#left-column {
+    max-width: 1200px; /* 왼쪽 컬럼의 최대 너비 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    padding: 20px; /* 내부 여백 */
+    background-color: rgba(255, 255, 255, 0); /* 투명한 배경색 */
+}
+
+.desc {
+    letter-spacing: 1px; /* 원하는 자간 값으로 설정 */
+    line-height: 1; /* 원하는 행간 값으로 설정 */
+}
+
+h1 {
+    margin-bottom: 0px; /* 위쪽 여백을 추가하여 리스트 아이템 사이의 간격을 넓힘 */
+}
+
+p {
+    margin-bottom: 40px; /* 위쪽 여백을 추가하여 리스트 아이템 사이의 간격을 넓힘 */
+}
+
+ul li {
+    margin-bottom: 7px; /* 각 리스트 아이템의 아래쪽 여백을 추가하여 간격을 넓힘 */
+}
+
+h2 {
+    margin-top: 60px; /* 위쪽 여백을 추가하여 리스트 아이템 사이의 간격을 넓힘 */
+}
+
+a {
+    color: #F9FF99; /* 링크의 기본 색상을 빨간색(#ff0000)으로 설정 */
+}
+
+a:visited {
+    color: #FFC8ED; /* 방문한 링크의 색상을 초록색(#00ff00)으로 설정 */
+}
