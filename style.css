@@ -1,59 +1,117 @@
 body {
     background-color: #424EFF;
     color: #F1F4FF;
-    font-family: 'Silkscreen', sans-serif; /* Silkscreen 폰트와 기본 sans-serif를 함께 지정 */
+    font-family: 'Silkscreen', sans-serif;
+}
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #c5c6c7;
 }
 
 pre {
-    text-align: center; /* 가로로 가운데 정렬 */
-    margin: 0 auto; /* 수평 가운데 정렬 */
-    display: block; /* 블록 요소로 변경하여 가로로만 중앙 정렬되도록 함 */
-    max-width: 100%; /* 최대 너비 설정 */
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
 }
 
 .pre-container {
-    line-height: 1.5; /* 원하는 행간 값으로 설정 */
-    text-align: center; /* 가로로 가운데 정렬 */
-    margin: 0 auto; /* 수평 가운데 정렬 */
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #grid {
-    text-align: center; /* 텍스트를 가로로 중앙 정렬 */
-    height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
+    text-align: center;
+    height: 100vh;
 }
 
 #left-column {
-    max-width: 1200px; /* 왼쪽 컬럼의 최대 너비 */
-    margin: 0 auto; /* 수평 가운데 정렬 */
-    padding: 20px; /* 내부 여백 */
-    background-color: rgba(255, 255, 255, 0); /* 투명한 배경색 */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .desc {
-    letter-spacing: 1px; /* 원하는 자간 값으로 설정 */
-    line-height: 1; /* 원하는 행간 값으로 설정 */
+    letter-spacing: 1px;
+    line-height: 1;
 }
 
 h1 {
-    margin-bottom: 0px; /* 위쪽 여백을 추가하여 리스트 아이템 사이의 간격을 넓힘 */
+    font-size: 12px; /* 폰트 크기 12px로 변경 */
+    text-align: center; /* 중간 정렬 */
+    margin-bottom: 0px;
 }
 
 p {
-    margin-bottom: 40px; /* 위쪽 여백을 추가하여 리스트 아이템 사이의 간격을 넓힘 */
+    margin-bottom: 40px;
 }
 
 ul li {
-    margin-bottom: 7px; /* 각 리스트 아이템의 아래쪽 여백을 추가하여 간격을 넓힘 */
+    margin-bottom: 7px;
 }
 
 h2 {
-    margin-top: 60px; /* 위쪽 여백을 추가하여 리스트 아이템 사이의 간격을 넓힘 */
+    margin-top: 60px;
 }
 
 a {
-    color: #F9FF99; /* 링크의 기본 색상을 빨간색(#ff0000)으로 설정 */
+    color: #F9FF99;
 }
 
 a:visited {
-    color: #FFC8ED; /* 방문한 링크의 색상을 초록색(#00ff00)으로 설정 */
+    color: #FFC8ED;
+}
+
+body.dark-mode a {
+    color: #79c0ff;
+}
+
+body.dark-mode a:visited {
+    color: #9ecbff;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#dark-mode-toggle, #clock {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 16px; /* 텍스트 크기 설정 */
+    border: 2px solid #F1F4FF; /* 테두리만 있는 버튼 */
+    background-color: transparent; /* 배경색 투명 */
+    color: #F1F4FF; /* 텍스트 색상 */
+    padding: 10px 20px; /* 크기 증가 */
+    margin: 0 10px; /* 버튼 간격 */
+}
+
+#dark-mode-toggle:hover {
+    background-color: #F1F4FF;
+    color: #424EFF;
+}
+
+#emoji-container {
+    font-size: 72px; /* 크기 3배 증가 */
+    cursor: pointer;
+    padding: 0px 0; /* 상하 간격 조정 */
+    text-align: center;
+    margin-top: 0px; /* 시계 버튼 아래로 이동 */
+}
+
+/* 화면 크기가 일정 크기 이상일 때 배경색 변경 */
+@media (min-width: 1500px) {
+    body {
+        background-color: #620790;
+    }
+}
+
+#emoji-container .small-font {
+    font-size: 12px; /* "I need somebody to love" 문구의 크기 */
+    display: block;
+    margin-top: 10px; /* 간격 조정 */
 }
